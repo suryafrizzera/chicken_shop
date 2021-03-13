@@ -42,6 +42,7 @@ public class otpverification extends AppCompatActivity {
         final ProgressBar progressBar = findViewById(R.id.otp_progressbar);
         final EditText otp_edittext = findViewById(R.id.otp_edittext);
         final Button verify_button = findViewById(R.id.verify_button);
+        int surya;
 
         verify_button.setOnClickListener(new View.OnClickListener() {
             @Override

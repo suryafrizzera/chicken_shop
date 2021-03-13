@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardview"
+        app:cardUseCompatPadding="true"
+        app:cardElevation="1dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <RelativeLayout
+            android:id="@+id/relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="10dp">
+
+            <ImageView
+                android:id="@+id/chickenitem_image"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:contentDescription="@string/item_image"
+                android:scaleType="centerCrop"
+                android:src="@drawable/broiler" />
+
+            <TextView
+                android:id="@+id/chickenitem_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/black"
+                android:layout_marginTop="5dp"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/chickenitem_image"
+                android:text="@string/item_name"
+                android:textSize="16sp" />
+
+
+            <TextView
+                android:id="@+id/price_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/price_value"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="2dp"
+                android:text="@string/price"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/price_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/holo_red_dark"
+                android:layout_below="@id/quantity_text"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="15dp"
+                android:text="@string/_00_rs"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/minus_button"
+                android:layout_width="20dp"
+                android:background="@android:color/transparent"
+                android:layout_height="wrap_content"
+                android:text="@string/minus"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:textColor="@android:color/black"
+                android:layout_marginStart="10dp"
+                android:layout_below="@id/chickenitem_name"/>
+
+            <TextView
+                android:id="@+id/kg_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chickenitem_name"
+                android:layout_marginTop="18dp"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@id/quantity_text"
+                android:text="@string/qty"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/plus_button"
+                android:layout_width="20dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="@string/plus"
+                android:layout_marginTop="5dp"
+                android:textSize="20sp"
+                android:layout_toEndOf="@id/kg_text"
+                android:textColor="@android:color/black"
+
+                android:layout_below="@id/chickenitem_name"/>
+
+            <TextView
+                android:id="@+id/quantity_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/chickenitem_name"
+                android:layout_toEndOf="@+id/minus_button"
+
+                android:layout_marginTop="18dp"
+                android:text="@string/_0"
+                android:textSize="16sp" />
+
+            <Button
+                android:id="@+id/addtocart_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_above="@+id/price_text"
+                android:layout_below="@id/chickenitem_name"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="173dp"
+                android:layout_marginTop="28dp"
+                android:layout_marginEnd="15dp"
+                android:layout_marginBottom="-5dp"
+                android:layout_toEndOf="@id/quantity_text"
+                android:background="@android:color/black"
+                android:singleLine="true"
+                android:text="@string/add_to_cart"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="12sp" />
+
+
+        </RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

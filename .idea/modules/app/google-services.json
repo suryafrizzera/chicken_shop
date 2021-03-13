@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "88061679613",
+    "firebase_url": "https://chicken-shop-601a0.firebaseio.com",
+    "project_id": "chicken-shop-601a0",
+    "storage_bucket": "chicken-shop-601a0.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:88061679613:android:0f172bc1850c1b651b6b94",
+        "android_client_info": {
+          "package_name": "com.example.chickenshop"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "88061679613-42dbae81pe9cogjbq7mp17768tmn7ep9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chickenshop",
+            "certificate_hash": "7e5ab551c66b1eb94da3a83ebbeb86d688d317f7"
+          }
+        },
+        {
+          "client_id": "88061679613-e4r8h4a8dcie4s4qdh6nbd7gsa003qnn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAY1cvGwdx4ffO5h7mOCjnXeSCeiKvS9Gc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "88061679613-e4r8h4a8dcie4s4qdh6nbd7gsa003qnn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
